@@ -11,7 +11,7 @@ public final class TestPlugin extends JavaPlugin {
     public void onEnable() {
         INSTANCE = this;
 
-        new Handler();
+        new Thread(Handler::new).start();
     }
 
     @Override
