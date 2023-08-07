@@ -17,7 +17,7 @@ public class Session {
         player.sendMessage("Please " + (password == null ? "register using /register" : "login using /login"));
     }
 
-    public void update(String password) {
+    public void update(final String password) {
         if (password == null) {
             player.sendMessage("Please write the full command");
             return;
