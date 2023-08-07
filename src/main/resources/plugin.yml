@@ -1,0 +1,9 @@
+name: TestPlugin
+version: '${project.version}'
+main: org.pebbleprojects.testplugin.TestPlugin
+api-version: '1.20'
+commands:
+  register:
+    description: Register command
+  login:
+    description: Login command
